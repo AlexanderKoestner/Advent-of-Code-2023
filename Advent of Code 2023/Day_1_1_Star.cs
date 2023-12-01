@@ -1,34 +1,28 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Advent_of_Code_2023
+﻿namespace Advent_of_Code_2023
 {
-    internal class Day_1_1_Star
+    public class Day_1_1_Star
     {
-        public string getResult()
+        private static readonly System.Buffers.SearchValues<char> s_myChars = System.Buffers.SearchValues.Create("0123456789");
+
+        public static string GetResult()
         {
             try
             {
-                StreamReader sr = new StreamReader("E:\\Advent_of_Code_2023\\AdventOfCode_Day1_Input.txt");
+                StreamReader sr = new("E:\\Advent_of_Code_2023\\AdventOfCode_Day1_Input.txt");
 
                 string firstDigit;
                 string lastDigit;
 
                 int sum = 0;
 
-                String line = sr.ReadLine();
+                string? line = sr.ReadLine();
 
                 while (line != null)
                 {
-                    firstDigit = line[line.IndexOfAny("0123456789".ToCharArray())].ToString();
-                    lastDigit = line[line.LastIndexOfAny("0123456789".ToCharArray())].ToString();
+                    firstDigit = line[line.AsSpan().IndexOfAny(s_myChars)].ToString();
+                    lastDigit = line[line.AsSpan().LastIndexOfAny(s_myChars)].ToString();
 
-                    sum += (int.Parse(firstDigit + lastDigit));
+                    sum += int.Parse(firstDigit + lastDigit);
 
                     line = sr.ReadLine();
                 }
@@ -36,7 +30,6 @@ namespace Advent_of_Code_2023
                 sr.Close();
 
                 return sum.ToString();
-
             }
             catch (Exception ex)
             {
