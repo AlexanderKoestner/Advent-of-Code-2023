@@ -31,8 +31,8 @@
                 string firstDigit;
                 string lastDigit;
 
-                int firstIndexOfStringDigit = -1;
-                int lastIndexOfStringDigit = -1;
+                int firstIndexOfStringDigit = int.MaxValue;
+                int lastIndexOfStringDigit = int.MinValue;
 
                 int firstIndexOfDigit = -1;
                 int lastIndexOfDigit = -1;
@@ -53,48 +53,25 @@
                             continue;
                         }
 
-                        if (firstIndexOfStringDigit == -1)
+                        if (firstIndexOfStringDigit > line.IndexOf(value))
                         {
                             firstIndexOfStringDigit = line.IndexOf(value);
                             currentFirstStringDigit = value;
                         }
-                        else
-                        {
-                            if (firstIndexOfStringDigit > line.IndexOf(value))
-                            {
-                                firstIndexOfStringDigit = line.IndexOf(value);
-                                currentFirstStringDigit = value;
-                            }
-                        }
-                    }
 
-                    foreach (string value in digits)
-                    {
-                        if (!line.Contains(value))
-                        {
-                            continue;
-                        }
-
-                        if (lastIndexOfStringDigit == -1)
+                        if (lastIndexOfStringDigit < line.LastIndexOf(value))
                         {
                             lastIndexOfStringDigit = line.LastIndexOf(value);
                             currentLastStringDigit = value;
                         }
-                        else
-                        {
-                            if (lastIndexOfStringDigit < line.LastIndexOf(value))
-                            {
-                                lastIndexOfStringDigit = line.LastIndexOf(value);
-                                currentLastStringDigit = value;
-                            }
-                        }
                     }
+
 
                     firstIndexOfDigit = line.AsSpan().IndexOfAny(s_myChars);
                     lastIndexOfDigit = line.AsSpan().LastIndexOfAny(s_myChars);
 
 
-                    if ((firstIndexOfDigit < firstIndexOfStringDigit || currentFirstStringDigit.Equals("")) && firstIndexOfDigit != -1)
+                    if ((firstIndexOfDigit < firstIndexOfStringDigit || currentFirstStringDigit.Equals("")) && firstIndexOfDigit > -1)
                     {
                         firstDigit = line[firstIndexOfDigit].ToString();
                     }
@@ -103,7 +80,7 @@
                         firstDigit = GetNumber(currentFirstStringDigit);
                     }
 
-                    if ((lastIndexOfDigit > lastIndexOfStringDigit || currentLastStringDigit.Equals("")) && lastIndexOfDigit != -1)
+                    if ((lastIndexOfDigit > lastIndexOfStringDigit || currentLastStringDigit.Equals("")) && lastIndexOfDigit > -1)
                     {
                         lastDigit = line[lastIndexOfDigit].ToString();
                     }
@@ -114,8 +91,8 @@
 
                     sum += int.Parse(firstDigit + lastDigit);
 
-                    firstIndexOfStringDigit = -1;
-                    lastIndexOfStringDigit = -1;
+                    firstIndexOfStringDigit = int.MaxValue;
+                    lastIndexOfStringDigit = int.MinValue;
 
                     firstIndexOfDigit = -1;
                     lastIndexOfDigit = -1;

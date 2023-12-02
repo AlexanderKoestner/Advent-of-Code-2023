@@ -2,22 +2,61 @@
 {
     public class Day_2_2_Star
     {
+        public static int PowerOf(string line)
+        {
+            int redCubes = 1;
+            int greenCubes = 1;
+            int blueCubes = 1;
+
+            foreach (string value in line[7..].Split(';'))
+            {
+                if (value.Contains("red"))
+                {
+                    if(int.Parse(value.Substring(value.IndexOf("red") - 3, 2)) > redCubes)
+                    {
+                        redCubes = int.Parse(value.Substring(value.IndexOf("red") - 3, 2));
+                    }
+                }
+
+                if (value.Contains("green"))
+                {
+                    if (int.Parse(value.Substring(value.IndexOf("green") - 3, 2)) > greenCubes)
+                    {
+                        greenCubes = int.Parse(value.Substring(value.IndexOf("green") - 3, 2));
+                    }
+                }
+
+                if (value.Contains("blue"))
+                {
+                    if (int.Parse(value.Substring(value.IndexOf("blue") - 3, 2)) > blueCubes)
+                    {
+                        blueCubes = int.Parse(value.Substring(value.IndexOf("blue") - 3, 2));
+                    }
+                }
+            }
+
+            return redCubes * greenCubes * blueCubes;
+        }
         public static string GetResult()
         {
             try
             {
                 StreamReader sr = new("E:\\Advent_of_Code_2023\\AdventOfCode_Day2_Input.txt");
 
+                int sum = 0;
+
                 string? line = sr.ReadLine();
 
                 while (line != null)
                 {
+                    sum += PowerOf(line);
+
                     line = sr.ReadLine();
                 }
 
                 sr.Close();
 
-                return "TBD";
+                return sum.ToString();
             }
             catch (Exception ex)
             {
