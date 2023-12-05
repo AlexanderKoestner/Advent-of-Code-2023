@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Advent_of_Code_2023
+﻿namespace Advent_of_Code_2023
 {
     public class Day_5_1_Star
     {
+        //  Problem to solve: https://adventofcode.com/2023/day/5 Part 1
+
         public static string GetResult()
         {
             try
