@@ -2,7 +2,9 @@
 {
     public class Day_2_2_Star
     {
-        public static int PowerOf(string line)
+        //  Problem to solve: https://adventofcode.com/2023/day/2 Part 2
+
+        private static int PowerOf(string line)
         {
             int redCubes = 1;
             int greenCubes = 1;

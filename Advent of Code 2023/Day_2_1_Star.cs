@@ -2,7 +2,9 @@
 {
     public class Day_2_1_Star
     {
-        public static bool IsPossible(string line, int redCubes, int greenCubes, int blueCubes)
+        //  Problem to solve: https://adventofcode.com/2023/day/2 Part 1
+
+        private static bool IsPossible(string line, int redCubes, int greenCubes, int blueCubes)
         {
             if (line.Contains("red"))
             {

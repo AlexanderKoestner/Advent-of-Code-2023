@@ -2,6 +2,8 @@
 {
     public class Day_1_2_Star
     {
+        //  Problem to solve: https://adventofcode.com/2023/day/1 Part 2
+
         private static readonly System.Buffers.SearchValues<char> s_myChars = System.Buffers.SearchValues.Create("0123456789");
 
         private static string GetNumber(string number)
