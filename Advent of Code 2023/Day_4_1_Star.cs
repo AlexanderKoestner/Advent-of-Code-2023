@@ -3,6 +3,7 @@
     public class Day_4_1_Star
     {
         //  Problem to solve: https://adventofcode.com/2023/day/4 Part 1
+        //  Get Puzzle Input here: https://adventofcode.com/2023/day/4/input
 
         private static int CalcCardWorth(List<string> winningNumbers, List<string> myNumbers)
         {

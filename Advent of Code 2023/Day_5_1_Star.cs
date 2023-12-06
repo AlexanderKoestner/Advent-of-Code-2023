@@ -3,6 +3,7 @@
     public class Day_5_1_Star
     {
         //  Problem to solve: https://adventofcode.com/2023/day/5 Part 1
+        //  Get Puzzle Input here: https://adventofcode.com/2023/day/5/input
 
         private static List<long> ReturnSeeds(string line)
         {

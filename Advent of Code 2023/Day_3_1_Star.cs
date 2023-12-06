@@ -5,6 +5,7 @@ namespace Advent_of_Code_2023
     public class Day_3_1_Star
     {
         //  Problem to solve: https://adventofcode.com/2023/day/3 Part 1
+        //  Get Puzzle Input here: https://adventofcode.com/2023/day/3/input
 
         private static readonly System.Buffers.SearchValues<char> s_myChars = System.Buffers.SearchValues.Create("0123456789");
 

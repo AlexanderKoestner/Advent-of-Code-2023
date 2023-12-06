@@ -3,6 +3,7 @@
     public class Day_2_1_Star
     {
         //  Problem to solve: https://adventofcode.com/2023/day/2 Part 1
+        //  Get Puzzle Input here: https://adventofcode.com/2023/day/2/input
 
         private static bool IsPossible(string line, int redCubes, int greenCubes, int blueCubes)
         {

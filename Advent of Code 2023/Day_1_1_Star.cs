@@ -3,6 +3,7 @@
     public class Day_1_1_Star
     {
         //  Problem to solve: https://adventofcode.com/2023/day/1 Part 1
+        //  Get Puzzle Input here: https://adventofcode.com/2023/day/1/input
 
         private static readonly System.Buffers.SearchValues<char> s_myChars = System.Buffers.SearchValues.Create("0123456789");
 

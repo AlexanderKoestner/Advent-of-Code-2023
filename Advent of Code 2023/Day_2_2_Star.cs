@@ -3,6 +3,7 @@
     public class Day_2_2_Star
     {
         //  Problem to solve: https://adventofcode.com/2023/day/2 Part 2
+        //  Get Puzzle Input here: https://adventofcode.com/2023/day/2/input
 
         private static int PowerOf(string line)
         {

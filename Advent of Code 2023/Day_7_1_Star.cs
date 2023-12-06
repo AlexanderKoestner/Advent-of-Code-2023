@@ -3,6 +3,7 @@
     public class Day_7_1_Star
     {
         //  Problem to solve: https://adventofcode.com/2023/day/7 Part 1
+        //  Get Puzzle Input here: https://adventofcode.com/2023/day/7/input
 
         public static string GetResult()
         {
@@ -11,8 +12,6 @@
                 StreamReader sr = new("E:\\Advent_of_Code_2023\\AdventOfCode_Day7_Input.txt");
 
                 List<string> lines = [];
-
-                int sum = 0;
 
                 string? line = sr.ReadLine();
 
