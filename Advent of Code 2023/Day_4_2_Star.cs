@@ -99,7 +99,7 @@
 
                     totalAmountOfCopies += actualMatches;
 
-                    for(int j = 1; j < matches + 1; j++)
+                    for (int j = 1; j < matches + 1; j++)
                     {
                         timesToPlayLine[i + j] += timesToPlay;
                     }
