@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Advent_of_Code_2023
+﻿namespace Advent_of_Code_2023
 {
     public class Day_8_2_Star
     {

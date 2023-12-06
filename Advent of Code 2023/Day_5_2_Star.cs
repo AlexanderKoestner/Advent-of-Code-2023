@@ -1,7 +1,4 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Numerics;
-
-namespace Advent_of_Code_2023
+﻿namespace Advent_of_Code_2023
 {
     public class Day_5_2_Star
     {
@@ -11,9 +8,11 @@ namespace Advent_of_Code_2023
         {
             try
             {
-                StreamReader sr = new("E:\\Advent_of_Code_2023\\AdventOfCode_Day5_Input.txt");
+                StreamReader sr = new("E:\\Advent_of_Code_2023\\AdventOfCode_Day6_Input.txt");
 
                 List<string> lines = [];
+
+                int sum = 0;
 
                 string? line = sr.ReadLine();
 
