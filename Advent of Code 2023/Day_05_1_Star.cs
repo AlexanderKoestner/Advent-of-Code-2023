@@ -1,6 +1,6 @@
 ﻿namespace Advent_of_Code_2023
 {
-    public class Day_5_1_Star
+    public class Day_05_1_Star
     {
         //  Problem to solve: https://adventofcode.com/2023/day/5 Part 1
         //  Get Puzzle Input here: https://adventofcode.com/2023/day/5/input

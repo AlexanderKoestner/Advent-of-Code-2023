@@ -1,15 +1,15 @@
 ﻿namespace Advent_of_Code_2023
 {
-    public class Day_7_2_Star
+    public class Day_09_2_Star
     {
-        //  Problem to solve: https://adventofcode.com/2023/day/7 Part 2
-        //  Get Puzzle Input here: https://adventofcode.com/2023/day/7/input
+        //  Problem to solve: https://adventofcode.com/2023/day/9 Part 2
+        //  Get Puzzle Input here: https://adventofcode.com/2023/day/9/input
 
         public static string GetResult()
         {
             try
             {
-                StreamReader sr = new("E:\\Advent_of_Code_2023\\AdventOfCode_Day7_Input.txt");
+                StreamReader sr = new("E:\\Advent_of_Code_2023\\AdventOfCode_Day9_Input.txt");
 
                 List<string> lines = [];
 

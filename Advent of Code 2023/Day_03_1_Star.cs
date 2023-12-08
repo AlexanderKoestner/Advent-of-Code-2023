@@ -2,7 +2,7 @@
 
 namespace Advent_of_Code_2023
 {
-    public class Day_3_1_Star
+    public class Day_03_1_Star
     {
         //  Problem to solve: https://adventofcode.com/2023/day/3 Part 1
         //  Get Puzzle Input here: https://adventofcode.com/2023/day/3/input
