@@ -1,6 +1,4 @@
-﻿using System.Text.RegularExpressions;
-
-namespace Advent_of_Code_2023
+﻿namespace Advent_of_Code_2023
 {
     public class Day_7_1_Star
     {
