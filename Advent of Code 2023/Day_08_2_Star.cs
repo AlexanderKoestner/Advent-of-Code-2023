@@ -1,4 +1,6 @@
-﻿namespace Advent_of_Code_2023
+﻿using System.Text.RegularExpressions;
+
+namespace Advent_of_Code_2023
 {
     public class Day_08_2_Star
     {
@@ -11,13 +13,38 @@
             {
                 StreamReader sr = new("E:\\Advent_of_Code_2023\\AdventOfCode_Day8_Input.txt");
 
-                List<string> lines = [];
+                Dictionary<string, string> locations = [];
+                List<string> startingLocations = [];
+
+                string location;
+                string leftAndRight;
+                string instructions = "";
 
                 string? line = sr.ReadLine();
 
                 while (line != null)
                 {
-                    lines.Add(line);
+                    if (line.Equals(""))
+                    {
+                        line = sr.ReadLine();
+                        continue;
+                    }
+
+                    if (line.Contains('='))
+                    {
+                        location = line.Split('=')[0].Trim();
+                        leftAndRight = line.Split("=")[1].Trim();
+                        locations.Add(location, leftAndRight);
+
+                        if(location.EndsWith('A'))
+                        {
+                            startingLocations.Add(location);
+                        }
+                    }
+                    else
+                    {
+                        instructions += line;
+                    }
                     line = sr.ReadLine();
                 }
 

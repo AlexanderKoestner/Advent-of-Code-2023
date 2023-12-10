@@ -24,7 +24,6 @@
             Console.Write("Day 09 - 2 Star Result: " + Day_09_2_Star.GetResult() + "\n\n");
             Console.Write("Day 10 - 1 Star Result: " + Day_10_1_Star.GetResult() + "\n\n");
             Console.Write("Day 10 - 2 Star Result: " + Day_10_2_Star.GetResult() + "\n\n");
-
         }
     }
 }
