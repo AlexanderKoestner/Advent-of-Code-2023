@@ -24,6 +24,14 @@
             Console.Write("Day 09 - 2 Star Result: " + Day_09_2_Star.GetResult() + "\n\n");
             Console.Write("Day 10 - 1 Star Result: " + Day_10_1_Star.GetResult() + "\n\n");
             Console.Write("Day 10 - 2 Star Result: " + Day_10_2_Star.GetResult() + "\n\n");
+            Console.Write("Day 11 - 1 Star Result: " + Day_11_1_Star.GetResult() + "\n\n");
+            Console.Write("Day 11 - 2 Star Result: " + Day_11_2_Star.GetResult() + "\n\n");
+            Console.Write("Day 12 - 1 Star Result: " + Day_12_1_Star.GetResult() + "\n\n");
+            Console.Write("Day 12 - 2 Star Result: " + Day_12_2_Star.GetResult() + "\n\n");
+            Console.Write("Day 13 - 1 Star Result: " + Day_13_1_Star.GetResult() + "\n\n");
+            Console.Write("Day 13 - 2 Star Result: " + Day_13_2_Star.GetResult() + "\n\n");
+            Console.Write("Day 14 - 1 Star Result: " + Day_14_1_Star.GetResult() + "\n\n");
+            Console.Write("Day 14 - 2 Star Result: " + Day_14_2_Star.GetResult() + "\n\n");
         }
     }
 }
