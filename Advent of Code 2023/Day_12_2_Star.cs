@@ -1,12 +1,9 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.IO;
-
-namespace Advent_of_Code_2023
+﻿namespace Advent_of_Code_2023
 {
-    public class Day_10_2_Star
+    public class Day_12_2_Star
     {
-        //  Problem to solve: https://adventofcode.com/2023/day/10 Part 2
-        //  Get Puzzle Input here: https://adventofcode.com/2023/day/10/input
+        //  Problem to solve: https://adventofcode.com/2023/day/12 Part 2
+        //  Get Puzzle Input here: https://adventofcode.com/2023/day/12/input
 
         public static string GetResult()
         {

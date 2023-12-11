@@ -1,18 +1,15 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.IO;
-
-namespace Advent_of_Code_2023
+﻿namespace Advent_of_Code_2023
 {
-    public class Day_10_2_Star
+    public class Day_11_2_Star
     {
-        //  Problem to solve: https://adventofcode.com/2023/day/10 Part 2
-        //  Get Puzzle Input here: https://adventofcode.com/2023/day/10/input
+        //  Problem to solve: https://adventofcode.com/2023/day/11 Part 2
+        //  Get Puzzle Input here: https://adventofcode.com/2023/day/11/input
 
         public static string GetResult()
         {
             try
             {
-                StreamReader sr = new("E:\\Advent_of_Code_2023\\AdventOfCode_Day10_Input.txt");
+                StreamReader sr = new("E:\\Advent_of_Code_2023\\AdventOfCode_Day11_Input.txt");
 
                 List<string> lines = [];
 

@@ -5,7 +5,7 @@
         //  Problem to solve: https://adventofcode.com/2023/day/9 Part 2
         //  Get Puzzle Input here: https://adventofcode.com/2023/day/9/input
 
-        private static string ReverseLine(string line)
+        public static string ReverseLine(string line)
         {
             List<string> numbers = [];
 
